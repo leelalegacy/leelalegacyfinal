@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>De लीला Legacy Group | Royal Heritage Weddings, Couture & Luxury Estates</title>
+  
+  <!-- Royal Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-cream: #faf7f2;
+      --bg-ivory: #f3ece0;
+      --bg-card: #ffffff;
+      --gold-primary: #c2983b;
+      --gold-light: #e8c872;
+      --gold-dark: #8c6819;
+      --gold-gradient: linear-gradient(135deg, #c2983b 0%, #ecd38a 50%, #946f1b 100%);
+      --crimson-royal: #781023;
+      --crimson-dark: #4d0714;
+      --peacock-teal: #0d4a42;
+      --peacock-emerald: #16685d;
+      --text-dark: #1e1b18;
+      --text-muted: #6e675f;
+      --border-gold: rgba(194, 152, 59, 0.28);
+      --font-royal: 'Cinzel', serif;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-dark);
+      font-family: var(--font-sans);
+      line-height: 1.65;
+      overflow-x: hidden;
+      background-image: radial-gradient(#c2983b 0.6px, transparent 0.6px);
+      background-size: 32px 32px;
+      background-color: #faf7f2;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* Royal Heading Styles */
+    h1, h2, h3, h4 {
+      font-family: var(--font-royal);
+      color: var(--crimson-dark);
+      letter-spacing: 0.04em;
+      line-height: 1.25;
+    }
+
+    .gold-shimmer {
+      background: linear-gradient(90deg, #946f1b 0%, #c2983b 30%, #fcedb6 50%, #c2983b 70%, #946f1b 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 6s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes shimmer {
+      to { background-position: 200% center; }
+    }
+
+    /* Buttons */
+    .btn-royal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: var(--gold-gradient);
+      color: #ffffff;
+      font-family: var(--font-royal);
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 34px;
+      border-radius: 4px;
+      border: 1px solid var(--gold-light);
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 8px 25px rgba(194, 152, 59, 0.35);
+      transition: all 0.3s ease;
+    }
+
+    .btn-royal:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(194, 152, 59, 0.5);
+      background: linear-gradient(135deg, #d3a94a 0%, #fae29f 50%, #aa8226 100%);
+    }
+
+    .btn-outline-royal {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: var(--crimson-dark);
+      font-family: var(--font-royal);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 13px 30px;
+      border-radius: 4px;
+      border: 1px solid var(--crimson-royal);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-royal:hover {
+      background: rgba(120, 16, 35, 0.06);
+      border-color: var(--gold-primary);
+      color: var(--gold-dark);
+    }
+
+    /* Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(250, 247, 242, 0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-gold);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 94px;
+    }
+
+    .brand-logo-link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      height: 72px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 10px rgba(194, 152, 59, 0.25));
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-family: var(--font-royal);
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: color 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-primary);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 70px 0 100px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 20px;
+      background: rgba(194, 152, 59, 0.1);
+      border: 1px solid var(--border-gold);
+      border-radius: 40px;
+      color: var(--gold-dark);
+      font-family: var(--font-royal);
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .hero-logo-center {
+      max-width: 440px;
+      margin: 0 auto 30px;
+      filter: drop-shadow(0 15px 35px rgba(194, 152, 59, 0.3));
+      animation: floatLogo 6s ease-in-out infinite;
+    }
+
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .hero-logo-center img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-tagline {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-style: italic;
+      color: var(--crimson-dark);
+      max-width: 840px;
+      margin: 0 auto 20px;
+      font-weight: 600;
+    }
+
+    .hero-description {
+      font-size: 1.08rem;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 40px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* Conglomerate Verticals Showcase */
+    .section-title {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 60px;
+    }
+
+    .section-title span {
+      font-family: var(--font-royal);
+      font-size: 0.8rem;
+      color: var(--gold-primary);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .section-title h2 {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+
+    .verticals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 32px;
+      margin-bottom: 90px;
+    }
+
+    .vertical-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.04);
+      transition: all 0.4s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .vertical-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 45px rgba(194, 152, 59, 0.2);
+      border-color: var(--gold-primary);
+    }
+
+    .card-media {
+      height: 250px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .vertical-card:hover .card-media img {
+      transform: scale(1.08);
+    }
+
+    .card-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(120, 16, 35, 0.9);
+      color: #fff;
+      font-family: var(--font-royal);
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 4px;
+      backdrop-filter: blur(8px);
+    }
+
+    .card-body {
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-body h3 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+      color: var(--crimson-dark);
+    }
+
+    .card-body p {
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+
+    /* Royal Calculator & Concierge Section */
+    .calculator-section {
+      background: linear-gradient(135deg, #1b070b 0%, #3d0a14 50%, #150508 100%);
+      color: #fff;
+      padding: 90px 0;
+      position: relative;
+      border-radius: 16px;
+      margin-bottom: 100px;
+      box-shadow: 0 25px 60px rgba(77, 7, 20, 0.35);
+      border: 1px solid rgba(232, 200, 114, 0.3);
+    }
+
+    .calc-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      padding: 0 50px;
+    }
+
+    .calc-intro h2 {
+      color: #f7e7c4;
+      font-size: 2.8rem;
+      margin-bottom: 18px;
+    }
+
+    .calc-intro p {
+      color: #d1b8c0;
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+    }
+
+    .calc-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(232, 200, 114, 0.3);
+      border-radius: 12px;
+      padding: 36px;
+      backdrop-filter: blur(20px);
+    }
+
+    .calc-row {
+      margin-bottom: 20px;
+    }
+
+    .calc-row label {
+      display: block;
+      font-family: var(--font-royal);
+      font-size: 0.8rem;
+      color: var(--gold-light);
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .calc-input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(232, 200, 114, 0.25);
+      border-radius: 6px;
+      padding: 12px 16px;
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .calc-input option {
+      background: #3d0a14;
+      color: #fff;
+    }
+
+    .calc-result-box {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(232, 200, 114, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .calc-price {
+      font-family: var(--font-royal);
+      font-size: 2rem;
+      color: var(--gold-light);
+      font-weight: 700;
+    }
+
+    /* Heritage Legacy Footer */
+    footer {
+      background: #120508;
+      color: #e0d0d5;
+      padding: 80px 0 40px;
+      border-top: 2px solid var(--gold-primary);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand img {
+      max-width: 220px;
+      margin-bottom: 20px;
+      filter: brightness(1.1);
+    }
+
+    .footer-brand p {
+      font-size: 0.92rem;
+      color: #a8949b;
+      max-width: 320px;
+    }
+
+    .footer-col h4 {
+      font-size: 1.1rem;
+      color: var(--gold-light);
+      margin-bottom: 22px;
+      letter-spacing: 0.1em;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-col a {
+      color: #a8949b;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-col a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: #8c7880;
+    }
+
+    /* Modal */
+    .royal-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(18, 5, 8, 0.85);
+      backdrop-filter: blur(12px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-content {
+      background: #faf7f2;
+      border: 2px solid var(--gold-primary);
+      border-radius: 12px;
+      max-width: 520px;
+      width: 100%;
+      padding: 40px;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7);
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--crimson-dark);
+      cursor: pointer;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .calc-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .hero-tagline {
+        font-size: 1.6rem;
+      }
+      .verticals-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#home" class="brand-logo-link">
+          <img src="C:/Users/Nick/.gemini/antigravity/brain/12f3f7cf-ef13-4d39-ae5b-590c81edfed2/.user_uploaded/media_1790711880705.jpg" alt="De Leela Legacy Group Logo" class="logo-img" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#destinations">Heritage Weddings</a></li>
+          <li><a href="#couture">Bridal Couture</a></li>
+          <li><a href="#jewels">Polki & Gold</a></li>
+          <li><a href="#estates">Spiritual Estates</a></li>
+        </ul>
+
+        <button class="btn-royal" onclick="openConciergeModal()">
+          Bespoke Concierge
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-badge">
+        ✦ The Pinnacle of Heritage Luxury & Eternal Grace ✦
+      </div>
+
+      <!-- Main Logo Feature -->
+      <div class="hero-logo-center">
+        <img src="C:/Users/Nick/.gemini/antigravity/brain/12f3f7cf-ef13-4d39-ae5b-590c81edfed2/.user_uploaded/media_1790711880705.jpg" alt="De Leela Legacy Group" />
+      </div>
+
+      <h1 class="hero-tagline">
+        "Where Divine Devotion Meets Unrivaled Royal Splendor"
+      </h1>
+
+      <p class="hero-description">
+        Inspired by the celestial romance of Radha & Krishna, De Leela Legacy Group curates bespoke royal destination weddings, handcrafted bridal heirloom weaves, royal jewels, and sanctified luxury estates.
+      </p>
+
+      <div class="hero-cta-group">
+        <button class="btn-royal" onclick="openConciergeModal()">
+          Book Private Consultation
+        </button>
+        <a href="#calculator" class="btn-outline-royal">
+          Calculate Royal Wedding
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 4 Pillars of De Leela Legacy Group -->
+  <section class="container" id="destinations">
+    <div class="section-title">
+      <span>Our Prestigious Verticals</span>
+      <h2>The Legacy Portfolio</h2>
+      <p>Four world-class divisions crafted for discerning families who celebrate timeless tradition with modern luxury.</p>
+    </div>
+
+    <div class="verticals-grid">
+      <!-- Vertical 1 -->
+      <div class="vertical-card">
+        <div class="card-media">
+          <span class="card-badge">Heritage Hospitality</span>
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Palace Destination Weddings" />
+        </div>
+        <div class="card-body">
+          <h3>Royal Destination Weddings</h3>
+          <p>Exquisite palace banquets, lakeside mandaps in Udaipur, and heritage haveli celebrations orchestrated with royal protocol and silver-service banqueting.</p>
+          <button class="btn-outline-royal" onclick="openConciergeModal('Royal Destination Wedding Inquiry')">Explore Palaces</button>
+        </div>
+      </div>
+
+      <!-- Vertical 2 -->
+      <div class="vertical-card" id="couture">
+        <div class="card-media">
+          <span class="card-badge">Haute Couture</span>
+          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80" alt="Heirloom Bridal Lehengas" />
+        </div>
+        <div class="card-body">
+          <h3>Bespoke Bridal Couture</h3>
+          <p>Pure handloom Banarasi katan silks, real silver & gold zari embroidery, and bespoke bridal lehengas customized by master artisans over 1,200 hours.</p>
+          <button class="btn-outline-royal" onclick="openConciergeModal('Bridal Couture Atelier Booking')">View Atelier Lookbook</button>
+        </div>
+      </div>
+
+      <!-- Vertical 3 -->
+      <div class="vertical-card" id="jewels">
+        <div class="card-media">
+          <span class="card-badge">High Jewellery</span>
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80" alt="Polki & Kundan Heirloom" />
+        </div>
+        <div class="card-body">
+          <h3>Heirloom Polki & Gold</h3>
+          <p>Certified uncut Polki diamonds, handcrafted Bikaner Meenakari enameling, and antique temple jewellery passed down through generations.</p>
+          <button class="btn-outline-royal" onclick="openConciergeModal('Private Vault Jewellery Viewing')">Private Vault Access</button>
+        </div>
+      </div>
+
+      <!-- Vertical 4 -->
+      <div class="vertical-card" id="estates">
+        <div class="card-media">
+          <span class="card-badge">Luxury Sanctuaries</span>
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Spiritual Luxury Villas" />
+        </div>
+        <div class="card-body">
+          <h3>Sanctuary Villas & Estates</h3>
+          <p>Vastu-perfect luxury villas and spiritual holiday sanctuaries nestled in Vrindavan, Rishikesh, and private royal hill enclaves.</p>
+          <button class="btn-outline-royal" onclick="openConciergeModal('Sanctuary Estate Villa Inquiry')">Request Estate Dossier</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Royal Wedding Cost Estimator -->
+  <section class="container" id="calculator">
+    <div class="calculator-section">
+      <div class="calc-container">
+        <div class="calc-intro">
+          <h2>Plan Your Royal Celebration</h2>
+          <p>Estimate the investment for a bespoke 3-day royal palace wedding curated by De Leela Legacy Hospitality.</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; color: #f2e2c2; font-size: 0.95rem;">
+            <li>✦ <strong>Venues:</strong> Lake Palace Udaipur, Jaipur Royal Fort, or Vrindavan Enclave</li>
+            <li>✦ <strong>Curated Rituals:</strong> Sangeet Gala, Sufi Night & Royal Pheras</li>
+            <li>✦ <strong>Silver Service:</strong> Master Royal Bawarchis & Sattvic Gourmet Banquets</li>
+          </ul>
+        </div>
+
+        <div class="calc-box">
+          <div class="calc-row">
+            <label>Selected Destination</label>
+            <select id="calc-venue" class="calc-input" onchange="calculateWedding()">
+              <option value="4500000">Udaipur Lakeside Palace (Flagship)</option>
+              <option value="3500000">Jaipur Heritage Fort & Haveli</option>
+              <option value="2500000">Vrindavan Sacred Spiritual Sanctuary</option>
+              <option value="5500000">Royal Palace Goa Beachfront</option>
+            </select>
+          </div>
+
+          <div class="calc-row">
+            <label>Estimated Guest Count</label>
+            <select id="calc-guests" class="calc-input" onchange="calculateWedding()">
+              <option value="1">Intimate Gathering (Up to 150 VIP Guests)</option>
+              <option value="1.6">Grand Royal Wedding (250 - 400 Guests)</option>
+              <option value="2.3">Maharaja Celebration (500+ Guests)</option>
+            </select>
+          </div>
+
+          <div class="calc-row">
+            <label>Curated Inclusions</label>
+            <select id="calc-tier" class="calc-input" onchange="calculateWedding()">
+              <option value="1">Luxe Heritage Package (Decor, Sound, Banquets)</option>
+              <option value="1.4">Imperial Maharaja Package (Helicopter Entry, Celebrity Artists, Couture Trousseau)</option>
+            </select>
+          </div>
+
+          <div class="calc-result-box">
+            <div>
+              <div style="font-size: 0.8rem; color: #e8c872; text-transform: uppercase;">Estimated Investment</div>
+              <div class="calc-price" id="calc-display">₹45,00,000</div>
+            </div>
+            <button class="btn-royal" style="padding: 12px 24px;" onclick="openConciergeModal('Royal Wedding Package Quotation')">
+              Lock Dates
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="C:/Users/Nick/.gemini/antigravity/brain/12f3f7cf-ef13-4d39-ae5b-590c81edfed2/.user_uploaded/media_1790711880705.jpg" alt="De Leela Legacy Logo" />
+          <p>Celebrating the eternal heritage of Indian artistry, divine grace, and imperial hospitality across the world.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Divisions</h4>
+          <ul>
+            <li><a href="#destinations">Heritage Weddings</a></li>
+            <li><a href="#couture">Bridal Couture</a></li>
+            <li><a href="#jewels">Polki & Fine Jewels</a></li>
+            <li><a href="#estates">Sanctuary Estates</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Private Offices</h4>
+          <ul>
+            <li><a href="#">Udaipur Palace Enclave</a></li>
+            <li><a href="#">New Delhi Golf Links</a></li>
+            <li><a href="#">Mayfair, London</a></li>
+            <li><a href="#">Downtown Dubai</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>VIP Concierge</h4>
+          <p style="color: #c9b4bc; font-size: 0.9rem; margin-bottom: 12px;">
+            Private appointments with Managing Directors by referral or prior invitation.
+          </p>
+          <button class="btn-royal" style="width: 100%; font-size: 0.8rem;" onclick="openConciergeModal()">
+            Request Private Audience
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 De लीला Legacy Group. All Rights Reserved.</div>
+        <div>Preserving Timeless Heritage & Divine Royalty.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Concierge Modal -->
+  <div class="royal-modal" id="concierge-modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeConciergeModal()">&times;</button>
+      <h3 style="font-size: 1.8rem; margin-bottom: 8px; color: var(--crimson-dark);">Bespoke Concierge</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">
+        Connect directly with our Chief Heritage Officers for weddings, couture appointments, or private estate acquisition.
+      </p>
+
+      <form onsubmit="handleConciergeSubmit(event)">
+        <div style="margin-bottom: 16px;">
+          <label style="display: block; font-family: var(--font-royal); font-size: 0.75rem; color: var(--gold-dark); margin-bottom: 6px;">Your Distinguished Name</label>
+          <input type="text" class="calc-input" style="color: #1a1a1a; background: #fff; border-color: var(--border-gold);" placeholder="e.g. Maharaja Vikramaditya / Mrs. Kapoor" required />
+        </div>
+
+        <div style="margin-bottom: 16px;">
+          <label style="display: block; font-family: var(--font-royal); font-size: 0.75rem; color: var(--gold-dark); margin-bottom: 6px;">WhatsApp / Phone Number</label>
+          <input type="tel" class="calc-input" style="color: #1a1a1a; background: #fff; border-color: var(--border-gold);" placeholder="+91 98765 43210" required />
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; font-family: var(--font-royal); font-size: 0.75rem; color: var(--gold-dark); margin-bottom: 6px;">Nature of Inquiry</label>
+          <input type="text" id="concierge-subject" class="calc-input" style="color: #1a1a1a; background: #fff; border-color: var(--border-gold);" value="Palace Destination Wedding Inquiry" />
+        </div>
+
+        <button type="submit" class="btn-royal" style="width: 100%;">
+          Submit Royal Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function calculateWedding() {
+      const venue = parseFloat(document.getElementById('calc-venue').value);
+      const guests = parseFloat(document.getElementById('calc-guests').value);
+      const tier = parseFloat(document.getElementById('calc-tier').value);
+
+      const total = Math.round(venue * guests * tier);
+      document.getElementById('calc-display').textContent = '₹' + total.toLocaleString('en-IN');
+    }
+
+    function openConciergeModal(subject) {
+      if (subject) {
+        document.getElementById('concierge-subject').value = subject;
+      }
+      document.getElementById('concierge-modal').style.display = 'flex';
+    }
+
+    function closeConciergeModal() {
+      document.getElementById('concierge-modal').style.display = 'none';
+    }
+
+    function handleConciergeSubmit(e) {
+      e.preventDefault();
+      alert("✦ Thank you. The Office of De लीला Legacy Group has received your inquiry. Our Executive Director will contact you within 4 hours.");
+      closeConciergeModal();
+    }
+  </script>
+</body>
+</html>
